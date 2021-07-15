@@ -29,9 +29,15 @@ function verificar(){
             res.innerHTML = `Em ${ano}, apenas uma versão do Android foi lançada em 02 de outubro: a Marshmallow, versão 6.0. Você possivelmente usou essa versão.`
         } else if (ano == 2016) {
             res.innerHTML = `No primeiro semestre de ${ano}, nenhuma versão do Android foi lançada. Apenas no segundo semestre de ${ano}, duas versões foram lançadas: em 22 de agosto, a versão 7.0, chamada Nougat e, em 04 de outubro, a versão 8.0, denominada Oreo.`
-        } else if (ano >= 2017) {
-            res.innerHTML = `Em ${ano}, a última versão do Android foi lançada em 21 de agosto: a Pie, versão 9.0. Você possivelmente usa essa versão.`
-        }   
+        } else if (ano == 2017 || ano == 2018) {
+            res.innerHTML = `Em ${ano}, a versão 9 do Android foi lançada em 21 de agosto: a Pie. Você possivelmente usou essa versão.`
+        } else if (ano == 2019) {
+            res.innerHTML = `Em ${ano}, a 10ª versão do Android foi lançada em 03 de setembro. Porém, a partir desta versão, o Android deixou de ser nomeado com nomes de doces. Você possivelmente usou essa versão.`
+        } else if (ano == 2020) {
+            res.innerHTML = `Em ${ano}, a 11ª versão do Android foi lançada em 08 de setembro. Porém, a partir da 10ª versão, o Android deixou de ser nomeado com nomes de doces. Você possivelmente está usando essa versão.`
+        } else if (ano == 2021) {
+            res.innerHTML = `Em ${ano}, a 12ª versão do Android foi lançada em 18 de maio. Porém, a partir da 10ª versão, o Android deixou de ser nomeado com nomes de doces. Você possivelmente usará essa versão em breve.` 
+        }  
     } else {
         if (ano < 2009){
             res.innerHTML = `A primeira versão do Android foi lançada em 2009. Portanto, em ${ano} não havia nenhum sistema Android nos dispositivos disponíveis no mercado.`
@@ -51,11 +57,14 @@ function verificar(){
             res.innerHTML = `Em ${ano}, apenas uma versão do Android foi lançada em 02 de outubro: a Marshmallow, versão 6.0. Você possivelmente usou essa versão.`
         } else if (ano == 2016) {
             res.innerHTML = `No primeiro semestre de ${ano}, nenhuma versão do Android foi lançada. Apenas no segundo semestre de ${ano}, duas versões foram lançadas: em 22 de agosto, a versão 7.0, chamada Nougat e, em 04 de outubro, a versão 8.0, denominada Oreo.`
-        } else if (ano >= 2017) {
-            res.innerHTML = `Em ${ano}, a última versão do Android foi lançada em 21 de agosto: a Pie, versão 9.0. Você possivelmente usa essa versão.`
+        } else if (ano == 2017 || ano == 2018) {
+            res.innerHTML = `Em ${ano}, a versão 9 do Android foi lançada em 21 de agosto: a Pie. Você possivelmente usou essa versão.`
+        } else if (ano == 2019) {
+            res.innerHTML = `Em ${ano}, a 10ª versão do Android foi lançada em 03 de setembro. Porém, a partir desta versão, o Android deixou de ser nomeado com nomes de doces. Você possivelmente usou essa versão.`
+        } else if (ano == 2020) {
+            res.innerHTML = `Em ${ano}, a 11ª versão do Android foi lançada em 08 de setembro. Porém, a partir da 10ª versão, o Android deixou de ser nomeado com nomes de doces. Você possivelmente está usando essa versão.`
+        } else if (ano == 2021) {
+            res.innerHTML = `Em ${ano}, a 12ª versão do Android foi lançada em 18 de maio. Porém, a partir da 10ª versão, o Android deixou de ser nomeado com nomes de doces. Você possivelmente usará essa versão em breve.`
         } 
-    }
-    
-    // res.innerHTML = `Olá. ${agora} ${ano}`
-    
+    }    
 }
